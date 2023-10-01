@@ -1,0 +1,79 @@
+# SkincareHunt
+
+SkincareHunt is a full-stack web application designed to find the best discounts on the latest skincare products. By integrating Django on the backend, PostgreSQL as the database, and Next.js (v13) with TypeScript on the frontend, SkincareHunt leverages BeautifulSoup for data scraping, delivering real-time skincare deals to users.
+
+## 🌟 Features
+
+- **Real-time Web Scraping**: Employing BeautifulSoup to frequently scrape and showcase the freshest skincare deals.
+- **User-Driven Filters**: Empower users to sift through products based on their specific needs.
+- **Instant Updates**: Ensuring users always have access to the most up-to-date deals.
+
+## 🛠 Installation & Setup
+
+### Prerequisites
+
+- **Node.js & npm**: Ensure Node.js and npm are installed. If not, [download them here](https://nodejs.org/en/download/).
+- **Python**: As SkincareHunt uses Django for its backend, [Python is essential](https://www.python.org/downloads/).
+- **PostgreSQL**: [Set up PostgreSQL](https://www.postgresql.org/download/).
+
+### 🔧 Setup
+
+#### 1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/skincarehunt.git
+cd skincarehunt
+```
+
+### 2. Setting up the Frontend:
+
+# Head into the frontend directory
+cd frontend
+
+# Install necessary dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+### 3. Setting up the Backend:
+
+# Open a different terminal instance/tab and get to the skincarehunt directory:
+
+# Navigate into the back directory
+cd back
+
+# Install the Python dependencies. Consider using a virtual environment!
+pip install -r requirements.txt
+
+# Migrate the database
+python manage.py migrate
+
+# Run the Django server
+python manage.py runserver
+
+Your backend should now be active at [http://localhost:8000](http://localhost:8000).
+
+## 📖 Usage
+
+Once both servers are up:
+
+- Visit the frontend to browse the freshest skincare deals.
+- Leverage the filters to streamline your search based on your preferences.
+
+## 🤝 Contributing
+
+Contributions are welcomed!
+
+1. Refer to the `issues` section for functionalities that need tweaking.
+2. Post a new issue for feature suggestions or bug reports.
+3. Fork this repository.
+4. Create a fresh branch for your features/fixes.
+5. Commit and push your changes to your fork.
+6. Make a pull request to this repository.
+
+## 📜 License
+
+SkincareHunt is licensed under the MIT License.
+
+
